@@ -77,7 +77,7 @@ class doctordetailspage extends StatelessWidget {
                                 doctorDetails['designation'],
                                 style: GoogleFonts.poppins(
                                   fontSize: 16,
-                                  fontWeight: FontWeight.w200,
+                                  fontWeight: FontWeight.normal,
                                   color: Colors.white,
                                 ),
                               ),
@@ -155,7 +155,7 @@ class doctordetailspage extends StatelessWidget {
                                             'The consultation charges are as follows:',
                                             style: GoogleFonts.poppins(
                                               fontSize: 16,
-                                              fontWeight: FontWeight.w200,
+                                              fontWeight: FontWeight.normal,
                                               color: Colors.black,
                                             ),
                                           ),
@@ -174,7 +174,7 @@ class doctordetailspage extends StatelessWidget {
                                           '${doctorDetails['s_cons_weekday']}',
                                           style: GoogleFonts.poppins(
                                             fontSize: 13,
-                                            fontWeight: FontWeight.w200,
+                                            fontWeight: FontWeight.normal,
                                             color: Colors.black,
                                           ),
                                         ),
@@ -192,7 +192,7 @@ class doctordetailspage extends StatelessWidget {
                                           '${doctorDetails['s_cons_weekend']}',
                                           style: GoogleFonts.poppins(
                                             fontSize: 13,
-                                            fontWeight: FontWeight.w200,
+                                            fontWeight: FontWeight.normal,
                                             color: Colors.black,
                                           ),
                                         ),
@@ -210,7 +210,7 @@ class doctordetailspage extends StatelessWidget {
                                           '${doctorDetails['l_cons_weekday']}',
                                           style: GoogleFonts.poppins(
                                             fontSize: 13,
-                                           fontWeight: FontWeight.w200,
+                                           fontWeight: FontWeight.normal,
                                             color: Colors.black,
                                           ),
                                         ),
@@ -227,7 +227,7 @@ class doctordetailspage extends StatelessWidget {
                                         Text('${doctorDetails['l_cons_weekend']}',
                                          style: GoogleFonts.poppins(
                                             fontSize: 13,
-                                           fontWeight: FontWeight.w200,
+                                           fontWeight: FontWeight.normal,
                                             color: Colors.black,
                                           ),
                                         ),
@@ -236,7 +236,7 @@ class doctordetailspage extends StatelessWidget {
                                           padding: const EdgeInsets.all(8.0),
                                           child: Text("Doctor's Availability:",style: GoogleFonts.poppins(
                                              fontSize: 16,
-                                                fontWeight: FontWeight.normal,
+                                                fontWeight: FontWeight.bold,
                                                 color: Colors.black,
                                           ),),
                                           
@@ -245,7 +245,7 @@ class doctordetailspage extends StatelessWidget {
                                           padding: const EdgeInsets.only(left:10,),
                                           child: Text('${doctorDetails['timing']}',style: GoogleFonts.poppins(
                                               fontSize: 14,
-                                              fontWeight: FontWeight.w200,
+                                              fontWeight: FontWeight.normal,
                                               color: Colors.black,
                                             ),),
                                         ),

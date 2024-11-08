@@ -26,33 +26,61 @@ class _homescreenState extends State<homescreen> {
     if(!await launchUrl(Uri.parse(url),mode: LaunchMode.externalApplication));
   }
 
+  // Future<void> _fetchNotificationText() async {
+  //   try {
+  //     final response = await http
+  //         .get(Uri.parse('https://itjoblinks.com/franklin/public/api/notifications'));
+  //     if (response.statusCode == 200) {
+  //       final List<dynamic> data = json.decode(response.body);
+  //       if (data.isNotEmpty) {
+  //         final notificationMap =
+  //             data[0]; // Assuming there's only one notification
+  //         if (notificationMap.containsKey('text')) {
+  //           setState(() {
+  //             _notificationText = notificationMap['text'];
+  //           });
+  //           _showNotificationDialog(); // Call the method to show the dialog
+  //         } else {
+  //           throw Exception('Text field not found in notification data');
+  //         }
+  //       } else {
+  //         throw Exception('No notifications found in API response');
+  //       }
+  //     } else {
+  //       throw Exception('Failed to load notification: ${response.statusCode}');
+  //     }
+  //   } catch (e) {
+  //     print('Error: $e');
+  //   }
+  // }
   Future<void> _fetchNotificationText() async {
-    try {
-      final response = await http
-          .get(Uri.parse('https://itjoblinks.com/franklin/public/api/notifications'));
-      if (response.statusCode == 200) {
-        final List<dynamic> data = json.decode(response.body);
-        if (data.isNotEmpty) {
-          final notificationMap =
-              data[0]; // Assuming there's only one notification
-          if (notificationMap.containsKey('text')) {
+  try {
+    final response = await http.get(
+        Uri.parse('https://itjoblinks.com/franklin/public/api/notifications'));
+    if (response.statusCode == 200) {
+      final List<dynamic> data = json.decode(response.body);
+      if (data.isNotEmpty) {
+        final notificationMap = data[0]; // Assuming there's only one notification
+        if (notificationMap.containsKey('text')) {
+          if (mounted) {  // Check if the widget is still in the widget tree
             setState(() {
               _notificationText = notificationMap['text'];
             });
             _showNotificationDialog(); // Call the method to show the dialog
-          } else {
-            throw Exception('Text field not found in notification data');
           }
         } else {
-          throw Exception('No notifications found in API response');
+          throw Exception('Text field not found in notification data');
         }
       } else {
-        throw Exception('Failed to load notification: ${response.statusCode}');
+        throw Exception('No notifications found in API response');
       }
-    } catch (e) {
-      print('Error: $e');
+    } else {
+      throw Exception('Failed to load notification: ${response.statusCode}');
     }
+  } catch (e) {
+    print('Error: $e');
   }
+}
 
   @override
   Widget build(BuildContext context) {

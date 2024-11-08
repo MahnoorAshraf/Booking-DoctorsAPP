@@ -82,18 +82,18 @@ class _contactusState extends State<contactus> {
                 'Mon–Fri: 8am–6:30pm',
                 style: GoogleFonts.poppins(
                             fontSize: 16,
-                            fontWeight: FontWeight.w200,
+                            fontWeight: FontWeight.normal,
                             color: Colors.black,
                           ),
               ),
               Text('Sat: 9am–5pm',  style: GoogleFonts.poppins(
                             fontSize: 16,
-                            fontWeight: FontWeight.w200,
+                            fontWeight: FontWeight.normal,
                             color: Colors.black,
                           ),),
               Text('Sun: 9am–4pm', style: GoogleFonts.poppins(
                             fontSize: 16,
-                            fontWeight: FontWeight.w200,
+                            fontWeight: FontWeight.normal,
                             color: Colors.black,
                           ),),
                     ],
@@ -129,26 +129,26 @@ class _contactusState extends State<contactus> {
                 'Booking Doctor App,',
                 style: GoogleFonts.poppins(
                             fontSize: 16,
-                            fontWeight: FontWeight.w200,
+                            fontWeight: FontWeight.normal,
                             color: Colors.black,
                           ),
               ),
               Text('54 Nullarbor Avenue\nFranklin, ACT 2913.',
                    style: GoogleFonts.poppins(
                             fontSize: 16,
-                            fontWeight: FontWeight.w200,
+                            fontWeight: FontWeight.normal,
                             color: Colors.black,
                           ),),
                  
              
               Text('Tel: (+61) 02 6253 8663',  style: GoogleFonts.poppins(
                             fontSize: 16,
-                            fontWeight: FontWeight.w200,
+                            fontWeight: FontWeight.normal,
                             color: Colors.black,
                           ),),
               Text('contact@franklingeneralpractice.com.au',  style: GoogleFonts.poppins(
                             fontSize: 16,
-                            fontWeight: FontWeight.w200,
+                            fontWeight: FontWeight.normal,
                             color: Colors.black,
                           ),),
                   ],
