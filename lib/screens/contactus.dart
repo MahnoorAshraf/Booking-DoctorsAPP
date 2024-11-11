@@ -146,11 +146,11 @@ class _contactusState extends State<contactus> {
                             fontWeight: FontWeight.normal,
                             color: Colors.black,
                           ),),
-              Text('contact@franklingeneralpractice.com.au',  style: GoogleFonts.poppins(
-                            fontSize: 16,
-                            fontWeight: FontWeight.normal,
-                            color: Colors.black,
-                          ),),
+              // Text('contact@franklingeneralpractice.com.au',  style: GoogleFonts.poppins(
+              //               fontSize: 16,
+              //               fontWeight: FontWeight.normal,
+              //               color: Colors.black,
+              //             ),),
                   ],
                 ),
               ),
